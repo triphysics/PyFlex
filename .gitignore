@@ -1,0 +1,31 @@
+# Byte-compiled Python files
+__pycache__/
+*.py[cod]
+
+# Shared object files from Python extensions
+*.so
+*.pyd
+
+# Python virtual environments
+.env
+.venv/
+venv/
+
+# Logs and runtime files
+*.log
+*.tmp
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Editor and IDE files
+.vscode/
+.idea/
+
+# Build artifacts from bindings
+bindings/build/
+bindings/*.egg-info/
+
+# Data and output folders
+data/
+demo/logs/
