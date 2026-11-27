@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "flexo2d"
+version = "0.1.0"
+description = "Flexoelectric and piezoelectric coefficients of 2D materials from rippled supercells"
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = ["numpy>=1.20", "sympy>=1.8"]
+
+[project.optional-dependencies]
+plotting = ["matplotlib>=3.4"]
+test = ["pytest>=7"]
+
+[project.scripts]
+flexo2d = "flexo2d.cli:main"
+
+[tool.setuptools]
+packages = ["flexo2d"]
+
+[tool.setuptools.package-data]
+flexo2d = []
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+filterwarnings = ["error::DeprecationWarning"]
